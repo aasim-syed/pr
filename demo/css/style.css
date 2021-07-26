@@ -1,0 +1,238 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,section{display:block}
+
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#0B0101;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	border-radius: 2px;
+	background:#26ED43;
+
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);border-radius: 2px;
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;border-radius: 2px;
+}
+#w{
+  border-radius: 10%;
+}
+h1{
+  font-family: monospace;
+  font-size: 30px;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #2AF409;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #282525;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.nav-center{
+  border-radius: 200px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 300%;
+  
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--clr-primary-1);
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+}
+.links a {
+  color: #0EF119;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 12.5rem 2rem;
+  transition: var(--transition);
+
+}
+.links a:hover {
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-5);
+  padding-left: 1.5rem;
+}
+.social-icons {
+  display: none;
+  color: #FFFFFF;
+}
+.fa-facebook:hover {
+ transform: scale(1.5);
+}
+.fa-twitter:hover {
+ transform: scale(1.5);
+}
+.fa-github:hover {
+ transform: scale(1.5);
+}
+.fa-linkedin:hover {
+ transform: scale(1.5);
+}
+.fa-instagram:hover {
+ transform: scale(1.5);
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-links {
+  height: 10rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+    color: #0C0101;
+    box-shadow: #4C4545;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+    color: #0F0101;
+    transform: scale(1.2) ;
+  }
+  .social-icons {
+    display: flex;
+    color: #39F40E;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: #39F40E;
+    transition: var(--transition);
+  }
+  .social-icons a:hover {
+    color: #0A0101;
+    transform: scale(1.5);
+  }
+}
+
+.new{
+  margin-top: 15%;
+  margin-left: none;
+  width: 100%;
+  padding: 6rem;
+  background: linear-gradient(20deg, #33EC01 2%, #010B0E 100%);
+  background: url("./g.gif");
+  box-shadow: var(--dark-shadow);
+  border-radius: 30px;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 30px;
+}
+.new:hover{
+  background-image: url("z.gif");
+}
+#tw{
+  color: #06F728;
+  border-bottom-left-radius: 30px;
+}
